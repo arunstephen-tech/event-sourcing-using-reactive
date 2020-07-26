@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: event-sourcing-gateway
+    
+server:
+  port: 9000
+  
+zuul:
+  ribbon:
+    eager-load:
+      enabled: true

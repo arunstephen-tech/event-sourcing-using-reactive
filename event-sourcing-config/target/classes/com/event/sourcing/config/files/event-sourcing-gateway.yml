@@ -1,0 +1,16 @@
+zuul:
+  routes:
+    event-sourcing-product:
+      path: /product/∗∗
+      service-id: event-sourcing-product
+    event-sourcing-cart:
+      path: /cart/∗∗
+      service-id: event-sourcing-cart
+    event-sourcing-order:
+      path: /order/∗∗
+      service-id: event-sourcing-order
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/

@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: event-sourcing-web
+    
+server:
+  port: 8080
+  
+event-sourcing:
+  apigateway:
+    url: http://localhost:9000

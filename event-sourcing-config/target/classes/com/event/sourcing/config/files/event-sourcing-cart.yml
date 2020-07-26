@@ -1,0 +1,21 @@
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: local
+
+event-sourcing:
+    amqp:
+      rabbit:
+        address: localhost:15672
+        username: guest
+        password: guest
+        vhost: /
+        exchange: order-exchange
+        queue: order-event-queue 
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/

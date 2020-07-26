@@ -1,0 +1,12 @@
+spring:
+ application:
+     name: event-sourcing-cart
+event:
+  sourcing:
+    amqp:
+      rabbit:
+        queue: order-event-queue
+        exchange: order-exchange
+server:
+  port: 8082
+  
